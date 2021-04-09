@@ -174,12 +174,12 @@ public class WallRunTutorial : MonoBehaviour
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
         jumping = Input.GetButton("Jump");
-        crouching = Input.GetKey(KeyCode.LeftShift);
+        crouching = Input.GetKey(KeyCode.LeftControl);
 
         //Crouching
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
             StartCrouch();
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftControl))
             StopCrouch();
 
         //Double Jumping
